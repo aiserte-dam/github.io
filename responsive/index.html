@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- ✅ Responsive imprescindible -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Metadatos originales -->
+  <meta name="description" content="Sitio web sobre Linares de Mora">
+  <meta name="author" content="Alicia Iserte Tena, aliiseten2@alu.edu.gva.es">
+  <meta name="language" content="es">
+  <meta name="revised" content="25/11/2025">
+
+  <!-- Cargamos tu CSS y luego los overrides responsive -->
+  <link rel="stylesheet" href="estilos/miestilo.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+
+  <title>Linares de Mora</title>
+</head>
+<body class="layout-horizontal">
+  <header class="site-header">
+    <div class="container">
+      <h1 id="top">Linares de Mora</h1>
+      <p>Autor: <strong>Alicia Iserte Tena</strong> - Ciclo FP: <strong>DAM</strong></p>
+
+      <nav class="nav-horizontal">
+        <ul>
+          <li><a href="#top">Inicio</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Contenedor y grid principal: section + aside -->
+  <main class="container">
+    <div class="grid-principal">
+      <section>
+        <h2>Bienvenidos</h2>
+        <p>Linares de Mora es un encantador pueblo de la provincia de Teruel, rodeado de montañas y naturaleza.</p>
+        <p><em>Ideal para turismo rural</em> y actividades al aire libre.</p>
+        <p><ins>Último evento:</ins> Salida a buscar robellones. Lugar plaza del campanario.
+          <del>Evento cancelado en octubre.</del>
+        </p>
+
+        <h3>Lugares destacados</h3>
+        <ul class="decorada">
+          <li>Iglesia Parroquial</li>
+          <li>Puente Medieval</li>
+          <li>Senderos naturales</li>
+        </ul>
+
+        <h3>Top 3 actividades</h3>
+        <ol class="decorada">
+          <li>Senderismo (Pozo Navarro, Pino del Escobón, ...)</li>
+          <li>Visitar monumentos (Iglesia de la Inmaculada, el castillo o el Puente del Loreto...)</li>
+          <li>Degustar gastronomía local (Migas de Aragón, Borrajas, Ternasco, ...)</li>
+        </ol>
+
+        <h3>¿Qué comprar?</h3>
+        <dl>
+          <dt>Jamón de DO Teruel</dt>
+          <dd>Producto típico con denominación de origen</dd>
+          <dt>Magdalenas</dt>
+          <dd>Las mejores de la provincia de Teruel</dd>
+          <dt>Testamento</dt>
+          <dd>Dulce típico elaborado con masa de pan, aceite y azúcar</dd>
+        </dl>
+
+        <h3>Multimedia</h3>
+        <p>Aquí una pequeña muestra de la belleza de este pueblo encantador.</p>
+
+        <section class="media-responsiva">
+          <figure class="tarjeta">
+            <img src="media/linares.jpg" alt="Vista de Linares de Mora" width="500">
+            <figcaption>Vista de Linares de Mora</figcaption>
+          </figure>
+
+          <div class="tarjeta media-responsiva">
+            <audio controls>
+              <source src="media/wedding-hopeful-cinematic-piano-150109.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+
+          <div class="tarjeta">
+            <video controls width="320">
+              <source src="media/cascada.MOV" type="video/mp4">
+              <!-- Nota: .MOV con type mp4 puede no reproducir en todos los navegadores -->
+            </video>
+          </div>
+        </section>
+
+        <h3>Tabla de eventos</h3>
+        <!-- ✅ Envoltorio para scroll horizontal en móviles -->
+        <div class="tabla-scroll">
+          <table>
+            <caption>Eventos en Linares de Mora</caption>
+            <tr>
+              <th rowspan="2">Mes</th>
+              <th colspan="2">Evento</th>
+            </tr>
+            <tr>
+              <th>Nombre</th>
+              <th>Lugar</th>
+            </tr>
+            <tr>
+              <td>Julio</td>
+              <td>Fiesta de Santa Ana</td>
+              <td>Rellano de la fuente</td>
+            </tr>
+            <tr>
+              <td>Agosto</td>
+              <td>Fiesta de Santanica</td>
+              <td>Plaza del pueblo</td>
+            </tr>
+            <tr>
+              <td>Diciembre</td>
+              <td>Fiesta de Nochevieja</td>
+              <td>Polifuncional</td>
+            </tr>
+            <tr>
+              <td>Enero</td>
+              <td>Fiesta de Roscón de Reyes</td>
+              <td>Polifuncional</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <aside>
+        <p>Más información en
+          <a href="https://www.linaresdemora.es" target="_blank" rel="noopener noreferrer">Web oficial</a>
+        </p>
+        <p>
+          Mira este video sobre Linares de Mora
+          <a href="https://www.youtube.com/watch?v=484Ph8p9JIQ" target="_blank" rel="noopener noreferrer">
+            Uno de los pueblos más bonitos de ESPAÑA
+          </a>
+        </p>
+        <a href="#top" class="btn">Ir al inicio</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>2025 Linares de Mora</p>
+    </div>
+  </footer>
+</body>
+</html>
