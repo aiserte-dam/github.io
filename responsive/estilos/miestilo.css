@@ -27,7 +27,7 @@ a:hover {
 }
 
 /* =============================
-   Variables (mantenemos tu paleta)
+   Variables 
 ============================= */
 :root{
   --color-fondo:#f9fafb;
@@ -182,7 +182,7 @@ tr:nth-child(even) td { background: var(--color-pares) }
 .btn:hover { background: var(--color-secundario); }
 
 /* =============================
-   Formularios (mantenemos los tuyos)
+   Formularios 
 ============================= */
 form {
   margin: 1rem;
